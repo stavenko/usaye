@@ -1,0 +1,30 @@
+[package]
+name = "usa-aye"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix = "0.13.5"
+actix-rt = "2.10.0"
+actix-web = "4.9.0"
+anyhow = "1.0.95"
+assert_matches = "1.5.0"
+clap = { version = "4.5.27", features = ["derive"] }
+env_logger = "0.11.6"
+futures = "0.3.31"
+humantime-serde = "1.1.1"
+mime = "0.3.17"
+reqwest = "0.12.12"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.138"
+tap = "1.0.1"
+tera = "1.20.0"
+thiserror = "2.0.11"
+tokio = { version = "*", features = ["macros"] }
+toml = "0.8.19"
+tracing = "0.1.41"
+url = { version = "2.5.4", features = ["serde"] }
+uuid = { version = "1.12.1", features = ["serde", "v4"] }
+
+[dev-dependencies]
+actix-http = "3.9.0"

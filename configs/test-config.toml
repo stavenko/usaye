@@ -1,0 +1,7 @@
+[server]
+port= 3001
+listen_address="0.0.0.0"
+
+[task_runner]
+max_tasks=4
+scheduling_interval="50ms"
