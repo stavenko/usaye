@@ -29,7 +29,9 @@ impl From<AddTaskError> for Error {
 
 #[derive(Deserialize)]
 pub struct Input {
+    /// URL to download and "PARSE".
     task_url: Url,
+    /// Optional delay to wait before running task - for "PURPOSE".
     #[serde(with = "humantime_serde", default)]
     delay: Duration,
 }
